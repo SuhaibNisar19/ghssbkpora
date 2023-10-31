@@ -1,3 +1,24 @@
+// =============Display Pop-Up================
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Function to display the modal
+function openModal() {
+    modal.style.display = "block";
+}
+
+// Function to close the modal
+function closeModal() {
+    modal.style.display = "none";
+}
+
+// Display the modal when the page loads (you can adjust the timing)
+window.onload = function() {
+    openModal();
+}
+
+
 // Change NavBar style on scroll
 
 window.addEventListener("scroll", () => {
@@ -20,3 +41,23 @@ faqs.forEach(faq => {
         }
     })
 })
+
+// Show/Hide NavBar Menu
+const menu = document.querySelector(".nav_menu")
+const menuBtn = document.querySelector("#open_menu_btn")
+const closeBtn = document.querySelector("#close_menu_btn")
+
+menuBtn.addEventListener("click", () => {
+    menu.style.display = "flex";
+    closeBtn.style.display = "inline-block";
+    menuBtn.style.display = "none";
+})
+
+// Close Nav Menu
+const closeNav = () => {
+    menu.style.display = "none";
+    closeBtn.style.display = "none";
+    menuBtn.style.display = "inline-block";
+}
+
+closeBtn.addEventListener("click", closeNav)
