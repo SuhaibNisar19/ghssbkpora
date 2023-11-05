@@ -1,0 +1,19 @@
+.top_teachers-heading {
+    text-align: center;
+    position: relative;
+    top: 3rem;
+    padding: 2rem 1rem 4rem;
+    margin-bottom: 3rem;
+}
+
+.top_teachers-body {
+    background: var(--color-bg1);
+    padding: 3rem;
+    border-radius: 0.7rem;
+}
+
+@media screen and (max-width: 600px) {
+    .bisma_mam-body {
+        padding: 1.5rem;
+    }
+}
